@@ -1,0 +1,183 @@
+.appointment-section {
+  background: linear-gradient(135deg, #1A1C22, #5A5C6A, #A7A8B2);
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+.appointment-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.card-header {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: white;
+  padding: 30px;
+  border: none;
+}
+
+.card-header h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 40px;
+}
+
+.doctor-info-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  padding: 25px;
+  border-left: 5px solid #3498db;
+}
+
+.doctor-info h4 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.doctor-specialty {
+  color: #3498db;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.doctor-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.doctor-details div {
+  display: flex;
+  align-items: center;
+}
+
+.doctor-details i {
+  color: #3498db;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.form-control, .form-select {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-check-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-check-input:checked {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.fee-summary {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #dee2e6;
+}
+
+.fee-label {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.fee-amount {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.total-fee {
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+}
+
+.text-primary {
+  color: #3498db !important;
+  text-decoration: none;
+}
+
+.text-primary:hover {
+  color: #2980b9 !important;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .appointment-section {
+    padding-top: 100px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-header {
+    padding: 20px;
+  }
+  
+  .doctor-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-check-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Animation for form validation */
+.form-control.is-invalid, .form-select.is-invalid {
+  border-color: #dc3545;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}

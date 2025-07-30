@@ -1,0 +1,130 @@
+.doctors-section {
+  background: linear-gradient(135deg, #1A1C22, #5A5C6A, #A7A8B2);
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+.doctor-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.doctor-info {
+  padding: 20px;
+}
+
+.doctor-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.doctor-specialty {
+  color: #3498db;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.doctor-details {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.doctor-details i {
+  color: #3498db;
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #f39c12;
+  margin-right: 10px;
+}
+
+.rating-text {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.fee-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.fee {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.book-btn {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  transform: scale(1.05);
+  color: white;
+}
+
+.form-select {
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.form-select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.no-doctors {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .doctors-section {
+    padding-top: 100px;
+  }
+  
+  .doctor-card {
+    margin-bottom: 20px;
+  }
+}
