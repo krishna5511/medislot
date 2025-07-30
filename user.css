@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.profile {
+  background: linear-gradient(135deg, #1A1C22, #5A5C6A, #A7A8B2);
+  min-height: 100vh;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.heading h1 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+
+  position: relative;
+  z-index: 1;
+
+
+}
+
+.first,
+.second {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  color: #fff;
+}
+
+.first {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second {
+  width: 65%;
+  text-align: left;
+}
+
+.sub-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  border: 2px solid skyblue;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#profilePicInput {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.second h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-control,
+textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-check-label {
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* todo working section */
+.user-working-section{
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.user-working-section h3{
+    margin-top:10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.appointments-list {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.bio-section {
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    margin: 30px auto 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.bio-section h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.bio-section textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    resize: vertical;
+    transition: background-color 0.3s ease;
+}
+
+.bio-section textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    box-shadow: 0 0 8px #007bff;
+}
+
+/* Profile picture input styling */
+#profilePicInput {
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.2);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#profilePicInput:hover {
+    background-color: rgba(0, 123, 255, 0.4);
+}
+
+
+
+
+

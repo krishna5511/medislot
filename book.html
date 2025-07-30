@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/8757f644af.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="book.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MEDISLOT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="doctorsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Doctors
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="doctorsDropdown">
+                <li><a class="dropdown-item fw-bold" href="#">All Doctors</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><span class="dropdown-header">By Specialization</span></li>
+                <li><a class="dropdown-item" href="#">General Physician</a></li>
+                <li><a class="dropdown-item" href="#">Cardiologist</a></li>
+                <li><a class="dropdown-item" href="#">Dermatologist</a></li>
+                <li><a class="dropdown-item" href="#">Gynecologist</a></li>
+                <li><a class="dropdown-item" href="#">Pediatrician</a></li>
+                <li><a class="dropdown-item" href="#">Neurologist</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><span class="dropdown-header">By Location</span></li>
+                <li><a class="dropdown-item" href="#">Delhi</a></li>
+                <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                <li><a class="dropdown-item" href="#">Jaipur</a></li>
+                <li><a class="dropdown-item" href="#">Chandigarh</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="appointmentDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Appointment
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="appointmentDropdown">
+                <li><a class="dropdown-item" href="#">Appointment Guidelines</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="user.html">My Appointments <span class="small text-muted">(if
+                      logged in)</span></a></li>
+                <li><a class="dropdown-item" href="#">Reschedule/Cancel</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                <li><a class="dropdown-item" href="tel:+911234567889">+91 1234567889</a></li>
+                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Help</a></li>
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+            <input class="search_bar form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="search_btn btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"
+                title="Search"></i></button>
+          </form>
+          <div class="user-icon">
+            <a href="login.html" title="Login"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="doctor-section d-flex align-items-center">
+    <div class="container py-5">
+      <h2 class="text-center text-white mb-4">Book Your Appointment</h2>
+      <div class="card doctor-card mx-auto">
+        <div class="row g-0">
+          <!-- Doctor Image and Name Column -->
+          <div
+            class="col-md-4 text-center p-4 d-flex flex-column justify-content-center align-items-center border-end">
+            <img src="images/derma.PNG" alt="Dr. Ananya Sharma" class="img-fluid rounded-circle mb-3"
+              style="width: 150px; height: 150px; object-fit: cover;">
+            <h5 class="card-title mb-1">Dr. Ananya Sharma</h5>
+            <p class="text-muted">Dermatologist</p>
+          </div>
+          <!-- Doctor Details and Booking Column -->
+          <div class="col-md-8">
+            <div class="card-body p-4">
+              <h4 class="card-subtitle mb-3">Professional Details</h4>
+              <ul class="list-unstyled doctor-details-list">
+                <li><i class="fa-solid fa-graduation-cap me-2"></i>MBBS (AIMS Delhi), PG</li>
+                <li><i class="fa-solid fa-location-dot me-2"></i>123, Shashtri Nagar</li>
+                <li><i class="fa-solid fa-phone me-2"></i>+91 12345 67890</li>
+                <li><i class="fa-solid fa-envelope me-2"></i>doctor@gmail.com</li>
+                <li><i class="fa-solid fa-clock me-2"></i>10:00 AM to 5:00 PM</li>
+              </ul>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <h5 class="mb-0">Booking Fee: <span class="text-primary fw-bold">₹199</span></h5>
+                <div class="actions">
+                  <button class="btn btn-outline-danger btn-sm me-2" title="Add to favorites">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="btn btn-primary" type="button">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

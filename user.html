@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile-Medislot</title>
+    <script src="https://kit.fontawesome.com/8757f644af.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8757f644af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="user.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">MEDISLOT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="doctorsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Doctors
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="doctorsDropdown">
+                                <li><a class="dropdown-item fw-bold" href="#">All Doctors</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><span class="dropdown-header">By Specialization</span></li>
+                                <li><a class="dropdown-item" href="#">General Physician</a></li>
+                                <li><a class="dropdown-item" href="#">Cardiologist</a></li>
+                                <li><a class="dropdown-item" href="#">Dermatologist</a></li>
+                                <li><a class="dropdown-item" href="#">Gynecologist</a></li>
+                                <li><a class="dropdown-item" href="#">Pediatrician</a></li>
+                                <li><a class="dropdown-item" href="#">Neurologist</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><span class="dropdown-header">By Location</span></li>
+                                <li><a class="dropdown-item" href="#">Delhi</a></li>
+                                <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                                <li><a class="dropdown-item" href="#">Jaipur</a></li>
+                                <li><a class="dropdown-item" href="#">Chandigarh</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="appointmentDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Appointment
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="appointmentDropdown">
+                                <li><a class="dropdown-item" href="#">Appointment Guidelines</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#my-appointments">My Appointments <span class="small text-muted">(if
+                                            logged in)</span></a></li>
+                                <li><a class="dropdown-item" href="#">Reschedule/Cancel</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                                <li><a class="dropdown-item" href="tel:+911234567889">+91 1234567889</a></li>
+                                <li><a class="dropdown-item" href="#">Support</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+                        <input class="search_bar form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="search_btn btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass" title="Search"></i></button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="profile">
+        <div class="heading">
+            <h1>My Profile</h1>
+        </div>
+        <div class="info">
+            <div class="first">
+                <div class="profile-container">
+                    <div class="sub-profile-container text-center mb-4">
+                        <div class="image">
+                            <img src="https://via.placeholder.com/140" alt="Patient" class="profile-pic"
+                                id="profilePreview">
+                        </div>
+                        <div class="btn">
+                            <label for="profilePicInput" class="visually-hidden">Upload Profile Picture</label><input type="file" class="form-control w-50 mx-auto" id="profilePicInput" accept="image/*" title="Upload Profile Picture">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="second">
+
+                <h2>Personal Details</h2>
+                <form class="patient-form">
+
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="tel" id="contact" class="form-control" placeholder="Enter your contact number"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" id="age" class="form-control" placeholder="Enter your age" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male"
+                                required>
+                            <label class="form-check-label" for="genderMale">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female"
+                                required>
+                            <label class="form-check-label" for="genderFemale">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other"
+                                required>
+                            <label class="form-check-label" for="genderOther">Other</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <!-- Address -->
+                        <div class="col-md-6">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea id="address" class="form-control" rows="3" placeholder="Enter your address"
+                                required></textarea>
+                        </div>
+
+                        <!-- Weight -->
+                        <div class="col-md-3">
+                            <label for="weight" class="form-label">Weight (kg)</label>
+                            <input type="number" id="weight" class="form-control" placeholder="e.g. 70" required>
+                        </div>
+
+                        <!-- Height -->
+                        <div class="col-md-3">
+                            <label for="height" class="form-label">Height (cm)</label>
+                            <input type="number" id="height" class="form-control" placeholder="e.g. 170" required>
+                        </div>
+                    </div>
+
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Save Profile</button>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="user-working-section" id="my-appointments">
+        <h3>My Appointments</h3>
+        <div class="appointments-list">
+            <p>No appointments scheduled yet.</p>
+        </div>
+    </div>
+
+    <div class="bio-section mt-4" style="max-width: 1200px; width: 100%; background-color: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 20px; color: #fff;">
+        <h2>User Bio</h2>
+        <textarea id="userBio" class="form-control" rows="4" placeholder="Tell us about yourself..."></textarea>
+    </div>
+
+
+</body>
+
+
+
+
+
+</html>

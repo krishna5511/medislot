@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediSlot</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/8757f644af.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MEDISLOT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="doctorsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Doctors
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="doctorsDropdown">
+              <li><a class="dropdown-item fw-bold" href="#">All Doctors</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><span class="dropdown-header">By Specialization</span></li>
+              <li><a class="dropdown-item" href="#">General Physician</a></li>
+              <li><a class="dropdown-item" href="#">Cardiologist</a></li>
+              <li><a class="dropdown-item" href="#">Dermatologist</a></li>
+              <li><a class="dropdown-item" href="#">Gynecologist</a></li>
+              <li><a class="dropdown-item" href="#">Pediatrician</a></li>
+              <li><a class="dropdown-item" href="#">Neurologist</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><span class="dropdown-header">By Location</span></li>
+              <li><a class="dropdown-item" href="#">Delhi</a></li>
+              <li><a class="dropdown-item" href="#">Mumbai</a></li>
+              <li><a class="dropdown-item" href="#">Jaipur</a></li>
+              <li><a class="dropdown-item" href="#">Chandigarh</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="appointmentDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Appointment
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="appointmentDropdown">
+              <li><a class="dropdown-item" href="#">Appointment Guidelines</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="user.html">My Appointments <span class="small text-muted">(if
+                    logged in)</span></a></li>
+              <li><a class="dropdown-item" href="#">Reschedule/Cancel</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Contact Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+              <li><a class="dropdown-item" href="tel:+911234567889">+91 1234567889</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Help</a></li>
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+          <input class="search_bar form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="search_btn btn btn-outline-success" type="submit"><i
+            class="fa-solid fa-magnifying-glass" title="Search"></i></button>
+        </form>
+        <div class="user-icon">
+          <a href="login.html" title="Login"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <div class="hero-section">
+    <div class="doctor">
+      <picture>
+        <img class="img-fluid" src="images/doctors.png" alt="">
+      </picture>
+    </div>
+    <div class="slogans text-center ">
+      <div class="head-slogan">Book your health, on time</div>
+      <div class="sub-slogan">
+        <p>Easily find the Right Doctor <br> and book your appointment <br> without any hassle</p>
+      </div>
+    </div>
+    <div class="third">
+      <div class="book-btn">
+        <a href="book.html"><button type="button" class="btn btn-primary">Book Now</button></a>
+      </div>
+    </div>
+  </div>
+  <!--  todon*************   features section start ************ ----->
+  <section class="features-section text-center">
+    <h2 class="mt-0">Our Features</h2>
+    <hr class="w-25 mx-auto mb-5" style="color: gray;">
+    <div class="container">
+      <div class="feature-card ">
+        <div class="icon">🩺</div>
+        <h3>Verified Doctors</h3>
+        <p>Only certified and experienced doctors across 20+ specialties.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Instant Appointments</h3>
+        <p>Book in-person or video consultations in under a minute.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📱</div>
+        <h3>Consult from Anywhere</h3>
+        <p>Talk to doctors over secure video call, from home or on the go.</p>
+      </div>
+    </div>
+  </section>
+  <!--  todon*************   features section end end************ ----->
+
+
+  <!--  todon*************    how it work start******************* ----->
+  <section id="how-it-works" class=" text-center">
+    <h2>HOW IT <br> WORK</h2>
+    <hr class="w-25 mx-auto mb-5" style="color: gray;">
+    <div class="steps">
+      <div class="step">
+        <img src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="Search">
+        <h3>Search</h3>
+        <p>Find doctors by name, specialty or location.</p>
+      </div>
+      <div class="step">
+        <img src="https://img.icons8.com/ios-filled/50/calendar.png" alt="Book">
+        <h3>Book</h3>
+        <p>Choose a time slot and book your appointment instantly.</p>
+      </div>
+      <div class="step">
+        <img src="https://img.icons8.com/ios-filled/50/ok--v1.png" alt="Confirm">
+        <h3>Confirm</h3>
+        <p>Get confirmation & reminders right away.</p>
+      </div>
+    </div>
+  </section>
+  <!--  todo *************    how it work end******************* ----->
+
+
+  <!--  todo *************    specialities start start******************* ----->
+  <section class="specialities-section  pt-5" style="background-color: #ffffff;">
+    <div class="container common-title text-center fw-bold">
+      <h2 class="mb-3">Our Specialist</h2>
+      <hr class="w-25 mx-auto mb-5">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem;">
+                <img src="images/denstist.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Dentist</h5>
+                  <p class="card-text mt-3 mb-3">Treats teeth and gums with care.</p>
+                  <a href="#" class="btn btn-dark">explore more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem;">
+                <img src="images/derma.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Dermatologist</h5>
+                  <p class="card-text mt-3 ">Cares for skin, hair, and nail problems.</p>
+                  <a href="#" class="btn btn-dark">explore more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem;">
+                <img src="images/gyni.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Gynecologist</h5>
+                  <p class="card-text mt-3 mb-3">Specializes in women’s reproductive health.</p>
+                  <a href="#" class="btn btn-dark">explore more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  todo *************    specialities start end******************* ----->
+    
+  <!--  todo *************    testimonial start ******************* ------>
+
+
+  <!--  todo *************    testimonial end ******************* ------>
+  <!--  todo *************    footer start ******************* ------>
+  <footer>
+    <div class="container text-md-left">
+      <div class="row">
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #29a9fd; height: 2px">
+          <p><i class="fa fa-home me-3"></i> Your City, Rajasthan, India</p>
+          <p><i class="fa fa-envelope me-3"></i> info@technicaldora.com</p>
+          <p><i class="fa fa-phone me-3"></i> (+91) 12345 67890</p>
+          <p><i class="fa fa-print me-3"></i> (+91) 09876 54321</p>
+        </div>
+
+        <div class="social-media-footer col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">SOCIAL MEDIA</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #29a9fd; height: 2px">
+          <p><i class="fa fa-facebook-f me-3"></i><a href="#">Facebook</a></p>
+          <p><i class="fa fa-instagram me-3"></i><a href="#">Instagram</a></p>
+          <p><i class="fa fa-twitter me-3"></i><a href="#">Twitter</a></p>
+          <p><i class="fa fa-linkedin me-3"></i><a href="#">Linkedin</a></p>
+          <p><i class="fa fa-snapchat-ghost me-3"><a href="#">-Snapchat</a></i></p>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold">Subscribe</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #29a9fd; height: 2px">
+          <form class="d-flex">
+            <input type="email" class="form-control me-2 bg-secondary text-white border-0" placeholder="Your email" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+     <div class="copyright-section" >
+      © 2025 TechnicalDora. All rights reserved.
+    </div>
+  </footer>
+  <!--  todo *************    footer start ******************* ------>
+
+
+
+
+
+</body>
+
+</html>

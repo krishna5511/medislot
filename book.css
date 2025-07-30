@@ -1,0 +1,31 @@
+body {
+  /* The background color is now set on the section, so this can be removed or changed */
+  background-color: #f8f9fa;
+}
+
+.doctor-section {
+  background-color: #6c757d; /* A standard Bootstrap gray */
+  width: 100%;
+  min-height: 100vh;
+  /* Use flexbox to center the card vertically, added in HTML */
+  padding: 20px 0;
+}
+
+.doctor-card {
+  max-width: 800px; /* Constrain the width for a better look */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.doctor-details-list li {
+  margin-bottom: 0.75rem; /* Add spacing between list items */
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.doctor-details-list .fa-solid {
+  color: #0d6efd; /* Primary color for icons */
+  width: 25px; /* Align icons nicely */
+  text-align: center;
+}
